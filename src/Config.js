@@ -1,5 +1,5 @@
 export const env={
-    api:"http://localhost:3001",
+    api:"https://vast-puce-dibbler-garb.cyclic.app",
     razorpay_key:"rzp_test_VKa6nJTfBOfdo8"
 
 }
