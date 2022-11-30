@@ -1,38 +1,364 @@
-.App {
-  text-align: center;
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.home1{
+ min-height:550px ;
 }
+.sitename{
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+background: linear-gradient(to right,rgb(238, 8, 47),#cf23cf);
+-webkit-background-clip: text;
+-webkit-text-fill-color:transparent;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.head{
+  font-size: 5rem;
+  font-weight: bolder;
+  color: blueviolet;
+}
+.para{
+  font-size: 1.5rem;
+}
+.login-btn{
+  width: 100px;
+}
+.signuplink{
+text-decoration: none;
+}
+.fashiondiv{
+  min-height: 700px;
+  background-color: rgb(187, 188, 201);
+}
+.fashiondiv2{
+  min-height: 200px;
+}
+.fashiondiv1{
+  height: 600px;
+  width: 100%;
+ 
+}
+.fashiontext{
+  font-size: 3rem;
+  font-weight: bolder;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.fashionul li{
+  margin-bottom: 20px;
+  font-size: larger;
+}
+.forgotlink{
+  color: blue;
+  text-decoration: none;
+}
+.forgotlink:hover{
+  cursor: pointer;
+}
+.signuppage{
+  height: 600px;
+}
+.signup{
+  width: 500px;
+  height: max-content;
+  border: 1px solid violet;
+  padding: 20px;
+}
+.signupbtn{
+  width: 300px;
+}
+.tnc{
+  text-decoration: none;
+}
+.buildbtn{
+width: 250px;
+height: 60px;
+padding: 16px;
+border-radius:27px;
+text-decoration: none;
+}
+.step{
+font-weight: bold;
+}
+.forgotpage{
+height: 440px;
+}
+.forgot{
+  width: 500px;
+  height: max-content;
+  border: 1px solid pink;
+  padding: 20px;
+}
+.passlink{
+color: blue;
+text-decoration: none;
+}
+.temppage{
+height: 600px;
+}
+.temppass{
+  width: 500px;
+  height: max-content;
+  border: 1px solid green;
+  padding: 20px;
+}
+.cardzoom{
+  transition: transform .2s; 
+}
+.cardzoom:hover{
+  transform: scale(1.05);
+}
+.freecard{
+  border: 3px solid grey;
+}
+.premiumcard{
+  border: 3px solid rgb(185, 45, 45);
+}
+.ecommercecard{
+  border: 3px solid green;
+}
+.vipcard{
+  border: 3px solid skyblue;
+}
+.planhead{
+  color: blue;
+  font-family:cursive;
+  font-weight: bold;
+}
+.carousel{
+  height: 600px;
+  width: 1000px;
+  pause:"false"
+}
+.imgsize{
+  height: 500px;
+}
+.footer{
+  background-color: black;
+}
+ .footertext{
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+ hr{
+  color: white;
+}
+@media only screen and (max-width: 576px){
+.footerxs{
+  padding-left:10px ;
+}
+}
+@media only screen and (min-width: 992px){
+.footerlg{
+  display: flex;
+  justify-content: center;
+}
+.footername{
+  padding-top: 20px;
+}
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.multiple{
+  min-height:700px;
+  background-color: pink;
+}
+.multiplediv1{
+  height: 700px;
+}
+.multiplediv2 h1{
+font-size: 3.5rem;
+font-weight: bolder;
+}
+@media only screen and (min-width:992px)  {
+  .multiplediv1{
+    border-right: 2px solid white;
   }
 }
+.col2{
+  height: 350px;
+}
+.col1{
+  height: 300px;
+}
+.multiple-img-div{
+max-width: 350px;
+}
+
+.multiple-img{
+  height: 250px;
+ width: 100%;
+}
+.multiplebtn{
+  min-height: 60px;
+  width: 250px;
+  
+}
+.privacydiv{
+  min-height: 700px;
+}
+.privacydiv2{
+  border-top: 1px solid grey;
+  width: 75%;
+}
+.privacytext{
+  color: black;
+  line-height: 30px;
+ 
+}
+.ptext{
+  color: black;
+  text-indent: 20px;
+}
+.ptext1{
+  color: black;
+}
+.termsdiv1{
+  width: 85%;
+}
+.businessmain-div{
+  padding-top: 55px;
+  width: 100% ;
+}
+.business-div{
+  height: 60px;
+  background-color: blueviolet;
+  color: white;
+}
+.busfit1{
+  min-height: 600px;
+  background-color: black;
+}
+.busfit3{
+  height: 500px;
+  width: 80%;
+ 
+}
+.busfit-text{
+  color: whitesmoke;
+}
+.busfit-h1{
+  font-size: 3rem;
+}
+.buslets-div{
+  width: 90%;
+}
+.buslets-text{
+  color:blueviolet;
+}
+.business-div2{
+ min-height: 850px;
+  background-color: rgb(94, 189, 118);
+}
+.busfit4{
+  height: 400px;
+  width: 100%;
+
+}
+.busfitpara{
+  color: black;
+  font-size: 1.5rem;
+}
+.fitness-hr{
+  width: 70%;
+  color: black;
+}
+.fitness-ul{
+  line-height: 40px;
+}
+.buslets-btn{
+  text-decoration: none;
+}
+.busecom-div1{
+ min-height: 650px;
+ background-color: rgb(24, 35, 49);
+}
+.busecom-img1{
+  height: 650px;
+  width: 100%;
+}
+.busecom-div2{
+  height: 650px;
+}
+.busecom-btn{
+  
+  min-height: 60px;
+  width: 250px;
+  
+}
+.busecom-h1{
+  font-size: 3.5rem;
+}
+.busres-div{
+  min-height:700px;
+  background-color: rgb(243, 97, 207);
+}
+.busres-div1{
+  min-height: 300px;
+  width: 900px;
+}
+.busres-img{
+  height: 400px;
+  width: 100%;
+}
+.busblog-div{
+  min-height:700px;
+}
+.busblog-img{
+  height: 400px;
+  width:100%
+}
+.busblog-btn{
+  min-height: 60px;
+  width: 250px;
+}
+
+.webpage-div{
+  min-height: 650px;
+  background-color: rgb(128, 194, 194);
+}
+.website-h1{
+  font-size: 3rem;
+  font-weight: bolder;
+}
+.website-btn{
+  min-height: 60px;
+  width: 250px;
+}
+.website-img{
+  height: 600px;
+  width: 100%;
+}
+.blog-page{
+  min-height: 600px;
+  background-color: rgb(112, 204, 112);
+}
+.blog-img{
+  height: 450px;
+  width: 100%;
+}
+.blog-img1{
+height: 450px;
+width: 100%;
+}
+.blog-btn{
+  min-height: 60px;
+  width: 250px;
+}
+.testd{
+  min-height: 60px;
+  min-width: 300px;
+  background-color: #cf23cf;
+}
+@media only screen and (max-width : 250px){
+  .btn-xs-width{
+   width: 150px;
+   padding-bottom: 60px;
+  }
+}
+.blog-h1{
+  font-size: 3.5rem;
+  font-weight: bolder;
+}
+.carousel-h1{
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
