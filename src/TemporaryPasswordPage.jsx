@@ -28,6 +28,7 @@ function TemporaryPasswordPage() {
         },
         onSubmit:async(values)=>{
             try {
+                values.password=values.password.trim()
                 let user=await axios.post(`${env.api}/temppassword`,values)
                 if(user.status===200){
                     toast.info(user.data.message,{toastId:"10"})

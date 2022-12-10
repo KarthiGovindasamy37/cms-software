@@ -111,7 +111,7 @@ function SignupPage() {
                   By clicking you agree to our <Link to="/terms" className="tnc">terms of use</Link> and acknowledge you've read our <Link to="/privacy" className="tnc">privacy policy</Link>.
                 </label>
               </div>
-              <div className="d-flex justify-content-center mt- mb-1">
+              <div className="d-flex justify-content-center mt-3 mb-1">
                 <button disabled={!formik.isValid} className="btn btn-primary signupbtn" type="submit">Sign Up</button>
               </div>
 
