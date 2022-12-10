@@ -11,19 +11,19 @@ function Portal() {
     <div>
     <PortalNavbar/>
 
-    <div class="container-fluid mt-5 pt-2">
-      <div class="row ">
-        <div class="col-2 g-0">
+    <div className="container-fluid mt-5 pt-2">
+      <div className="row ">
+        <div className="col-2 g-0">
             <Sidebar/>
             </div>
-            <div class="col-10 g-0">
+            <div className="col-10 g-0">
               <Topbar/>
             
-            <div class="d-flex">
-                    <div class="col-9">
+            <div className="d-flex">
+                    <div className="col-9">
                       <Outlet/>
                     </div>
-                    <div class="col-3">
+                    <div className="col-3">
                       <Typobar/>
                     </div>
 

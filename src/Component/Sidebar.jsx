@@ -14,9 +14,9 @@ function Sidebar() {
   const {webAction,webContentsAct,blogAction} = bindActionCreators(actionCreators,dispatch)
   return (
     
-    <div class="sidebar">
+    <div className="sidebar">
       <div className=" pt-4 pb-2 ps-2 pe-2 sidebar-content" onClick={webAction}>
-    <h4 class="text-light sidebar-heading">Website</h4>
+    <h4 className="text-light sidebar-heading">Website</h4>
     {
      portal.webOpen ?
       <span className='text-white port-icon'><FontAwesomeIcon icon={faCaretDown} size="lg"/></span>
@@ -26,7 +26,7 @@ function Sidebar() {
     </div>
     {
     portal.webOpen ? 
-    <div class="web-contents">
+    <div className="web-contents">
     <div className="ps-3 pe-2 pb-1 sidebar-content" onClick={webContentsAct}>
     <h5 className='sidebar-heading'>pages</h5> 
     {
@@ -38,7 +38,7 @@ function Sidebar() {
     </div>
     {
     portal.webContents ?
-    <div class="pages">
+    <div className="pages">
      <Link to="/portal/home" className='webLink' ><h6 className='sidebar-hover m-0 p-2 ps-3'>Home</h6></Link>
      <Link to="/portal/about" className='webLink' ><h6 className='sidebar-hover m-0 p-2 ps-3'>About</h6></Link> 
      <Link to="/portal/contact" className='webLink' ><h6 className='sidebar-hover m-0 p-2 ps-3'>Contact</h6></Link> 
@@ -51,7 +51,7 @@ function Sidebar() {
     
     
     <div className=" pt-3 pb-1 ps-2 pe-2 sidebar-content " onClick={blogAction}>
-    <h4 class="text-light sidebar-heading">Blog</h4>
+    <h4 className="text-light sidebar-heading">Blog</h4>
     {
       portal.blogOpen ?
       <span className='text-white port-icon3'><FontAwesomeIcon icon={faCaretDown} size="lg"/></span>
@@ -61,7 +61,7 @@ function Sidebar() {
     </div>
     {
       portal.blogOpen ?
-      <div class="pages">
+      <div className="pages">
       <Link to="/portal/myblog1" className='webLink' ><h6 className='sidebar-hover m-0 p-2 ps-3'>My blog 1</h6></Link>
       <Link to="/portal/myblog2" className='webLink' ><h6 className='sidebar-hover m-0 p-2 ps-3'>My blog 2</h6></Link>
       </div>
