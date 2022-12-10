@@ -361,4 +361,90 @@ width: 100%;
   font-size: 3rem;
   font-weight: bolder;
 }
+.sidebar{
+  min-height: 650px;
+  width: 100%;
+  background-color: rgb(8, 8, 77);
+  
+}
+.topbar{
+  height: 70px;
+  background-color:rgb(151, 151, 223) ;
+}
+.topbar-height{
+  height: 70px;
+}
+.typobar{
+  height: 580px;
+  width: 100%;
+  border-left:2px solid #cf23cf;;
+  
+}
+.web-contents{
+
+ min-height:min-content;
+ background-color: aquamarine;
+ width:100%;
+}
+.pages{
+  min-height: 50px;
+  background-color: #cf23cf;
+}
+.sidebar-heading{
+ 
+  cursor: context-menu;
+}
+.sidebar-hover{
+  border-left: 4px solid #cf23cf; 
+}
+.sidebar-hover:hover{
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  border-left: 4px solid white;
+}
+
+
+@media only screen and (max-width : 768px){
+  .sidebar-heading{
+    margin: 0;
+  }
+} 
+@media only screen and (min-width : 768px){
+  .sidebar-content{
+    display: flex;
+    justify-content: space-between;
+  }
+  .sidebar-heading{
+    margin: 0;
+  }
+}
+.user-icon:hover{
+  cursor: pointer;
+}
+.logout{
+color: blue;
+}
+.portal-home{
+  height: 580px;
+  width: 100%;
+  background-image: url(/public/images/pageimages/portalhome1.jpg);
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;
+}
+.webLink{
+  text-decoration: none;
+  color: black;
+}
+.portal-page{
+  height: 580px;
+  background-image: linear-gradient(to bottom right, skyblue,white, deeppink);
+}
+.logout-div{
+  border: 1px solid red;
+}
+
+
+
 

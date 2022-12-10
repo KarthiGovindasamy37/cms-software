@@ -45,7 +45,10 @@ function Footer() {
         </div>
       </div>
     </div>
+    <div className='ps-4 pe-4'>
     <hr style={{color:"white"}}></hr>
+    </div>
+    
     <div className="d-flex justify-content-center pb-2">
       <h6 className='footertext'>Copyright <FontAwesomeIcon icon={faCopyright}/> 2022 MySite.com</h6>
     </div>  

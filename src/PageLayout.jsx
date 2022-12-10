@@ -3,7 +3,7 @@ import { Outlet } from 'react-router-dom'
 import Footer from './Component/Footer'
 import Navbar from './Component/Navbar'
 
-function Pages() {
+function PageLayout() {
   return (
     <div>
         <Navbar/>
@@ -13,4 +13,4 @@ function Pages() {
   )
 }
 
-export default Pages
+export default PageLayout

@@ -1,14 +1,11 @@
 import axios from 'axios'
 import { useFormik } from 'formik'
-import React, { useState } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import { toast } from 'react-toastify'
 import {env} from './Config'
 
 function ForgotPasswordPage() {
-
-  let[msg,setmsg]=useState(false)
-  let error="Age must be older than 18"
 
   let formik=useFormik({
     initialValues:{

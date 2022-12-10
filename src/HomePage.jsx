@@ -1,12 +1,25 @@
 import axios from 'axios'
 import { useFormik } from 'formik'
 import React from 'react'
-import { Link } from 'react-router-dom'
-import { env } from './Config'
-import { toast } from 'react-toastify';
+import { Link, useNavigate } from 'react-router-dom'
 import CarouselItem from './Component/CarouselItem'
+import { useDispatch, useSelector } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import * as actionCreator from "./Redux/Action Creators/LoginAction"
+import { useEffect } from 'react'
 
 function HomePage() {
+
+    const user = useSelector(state => state.user.user)
+    const dispatch = useDispatch()
+
+    const {loginUser} = bindActionCreators(actionCreator,dispatch)
+
+    let navigate=useNavigate()
+
+    useEffect(()=>{
+       if(user.isLoggedin === true ) navigate("/portal")
+    },[user])
 
     let formik=useFormik({
         initialValues:{
@@ -25,18 +38,9 @@ function HomePage() {
             }
             return errors;
         },
-        onSubmit:async(values)=>{
-            try {
-                let login= await axios.post(`${env.api}/login`,values)
-
-                if(login.status===200){
-                  window.localStorage.setItem("token",login.data.token)
-                }else{
-                  toast.error(login.data.message,{toastId:"7"})
-                }
-            } catch (error) {
-              toast.error(error.response.data.message,{toastId:"1"})  
-            }
+        onSubmit:(values)=>{
+          
+           loginUser(values) 
 
         }
     })

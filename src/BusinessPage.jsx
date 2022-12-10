@@ -83,7 +83,7 @@ function BusinessPage(){
              </div>
             </div>
             <div className="col-lg-6">
-              <div className="ps-lg-5 pt-4 text-dark">
+              <div className="ps-lg-5 pt-4 mt-1 text-dark">
                 <h1 className="busfit-h1 ">Build a more</h1>
                 <h1 className="busfit-h1">powerful fitness</h1>
                 <h1 className="busfit-h1">business</h1>
@@ -93,7 +93,7 @@ function BusinessPage(){
                 <p className="text-dark">a single platform.</p>
               </div>
             </div>
-            <img className="busfit4 pt-4 ps-lg-5 pe-lg-5 pb-4" src="/images/pageimages/busfitness1.jpg" alt="Fitness template"/>
+            <img className="busfit4 mt-lg-4 pt-4 ps-lg-5 pe-lg-5" src="/images/pageimages/busfitness1.jpg" alt="Fitness template"/>
             </div>
             </div>
           </div>

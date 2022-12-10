@@ -3,8 +3,12 @@ import PlanCard from './Component/PlanCard'
 import { toast } from 'react-toastify'
 import { env } from './Config'
 import axios from 'axios'
+import { useSelector } from 'react-redux'
 
 function PlanCardPage() {
+
+  const{name,email}=useSelector(state=>state.user.user)
+ 
 
     let data=[
         {
@@ -265,9 +269,8 @@ function PlanCardPage() {
             alert(`Order ID : ${res.razorpay_order_id}`);
           },
           prefill:{
-            // this is user details section as of now fill with sample data
-            name:"Karthi",
-            email:"karthi369234@gmail.com",
+            name,
+            email,
             contact:"9999999999"
           },
           notes:{
@@ -279,13 +282,9 @@ function PlanCardPage() {
         };
         let paymentWindow = new window.Razorpay(options);
         paymentWindow.on('payment.failed',(response)=>{
-        alert(response.error.code);
         alert(response.error.description);
-        alert(response.error.source);
-        alert(response.error.step);
         alert(response.error.reason);
-        alert(response.error.metadata.order_id);
-        alert(response.error.metadata.payment_id);
+        
       });
 
       paymentWindow.open();

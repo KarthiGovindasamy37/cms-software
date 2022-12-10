@@ -11,6 +11,7 @@ function SignupPage() {
 
   let formik=useFormik({
     initialValues:{
+      name:"",
       email:"",
       password:"",
       confirmpass:"",
@@ -18,7 +19,10 @@ function SignupPage() {
     },
     validate:(values)=>{
       let errors={}
-
+       
+      if(values.name===""){
+        errors.name="Please enter user name"
+      }
       if(values.email===""){
         errors.email="Please enter email id"
       }
@@ -26,7 +30,7 @@ function SignupPage() {
         errors.password="Please enter password"
       }
       if(values.password.length>0 && values.password.length<5){
-        errors.password="Password must be 5 characters long"
+        errors.password="Password should be atleast 5 characters long"
       }
       if(values.confirmpass===""){
         errors.confirmpass="Please re enter password"
@@ -64,9 +68,17 @@ function SignupPage() {
 <div className="d-flex justify-content-center  signuppage bg-light ">
   <div>
     <h5 className='text-center'>Already have an account? <Link to="/" className='tnc'>Log in</Link></h5>
-    <div className="signup shadow-lg p-3 mb-5 bg-body rounded mt-5">
+    <div className="signup shadow-lg p-3 mb-5 bg-body rounded mt-3">
         <form onSubmit={formik.handleSubmit}>
-            <div className="mb-3 mt-3">
+           <div className="mb-3 mt-2">
+                <label for="name" className="form-label">Name</label>
+                <input type="text" className="form-control" id="name"
+                name="name"
+                onChange={formik.handleChange}
+                value={formik.values.name} />
+                <span style={{color:"red"}}>{formik.errors.name}</span>
+              </div>
+            <div className="mb-3">
                 <label for="email" className="form-label">Email Address</label>
                 <input type="email" className="form-control" id="email"
                 name="email"
@@ -99,7 +111,7 @@ function SignupPage() {
                   By clicking you agree to our <Link to="/terms" className="tnc">terms of use</Link> and acknowledge you've read our <Link to="/privacy" className="tnc">privacy policy</Link>.
                 </label>
               </div>
-              <div className="d-flex justify-content-center mt-5 mb-3">
+              <div className="d-flex justify-content-center mt- mb-1">
                 <button disabled={!formik.isValid} className="btn btn-primary signupbtn" type="submit">Sign Up</button>
               </div>
 
