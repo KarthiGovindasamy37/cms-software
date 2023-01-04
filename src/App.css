@@ -425,6 +425,9 @@ width: 100%;
 .logout{
 color: blue;
 }
+.logout:hover{
+  cursor: pointer;
+}
 .portal-home{
   height: 580px;
   width: 100%;
