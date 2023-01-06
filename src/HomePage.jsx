@@ -48,42 +48,42 @@ function HomePage() {
     let carouselItem=[
       {
         title:"Fitness",
-        image:"/images/carousel/carfit.jpg",
+        image:"carfit.jpg",
         alternative:"Fitness template"
       },
       {
         title:"Travel",
-        image:"/images/carousel/cartour.jpg",
+        image:"cartour.jpg",
         alternative:"Travel template"
       },
       {
         title:"Restaurant",
-        image:"/images/carousel/carfoodres.jpg",
+        image:"carfoodres.jpg",
         alternative:"Restaurant template"
       },
       {
         title:"eCommerce",
-        image:"/images/carousel/carecom.jpg",
+        image:"carecom.jpg",
         alternative:"eCommerce template"
       },
       {
         title:"Grocery",
-        image:"/images/carousel/carorganicveg.jpg",
+        image:"carorganicveg.jpg",
         alternative:"Grocery template"
       },
       {
         title:"Education",
-        image:"/images/carousel/caredu.jpg",
+        image:"caredu.jpg",
         alternative:"Education template"
       },
       {
         title:"IT Services",
-        image:"/images/carousel/caritsol.jpg",
+        image:"caritsol.jpg",
         alternative:"IT Services template"
       },
       {
         title:"Portfolio",
-        image:"/images/carousel/carport.jpg",
+        image:"carport.jpg",
         alternative:"Portfolio template"
       }
     ]
