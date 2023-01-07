@@ -63,7 +63,9 @@ function PasswordChangePage() {
         <div className="bg-light text-center">
              <h2 className='m-0' style={{color:"green"}}>Password change window</h2>
         </div>
+        <div className="temppage">
         <div className="d-flex justify-content-center  temppage bg-light ">
+            <div className="col-11 col-sm-10 col-md-6 col-lg-4">
             <div className="temppass shadow-lg p-3 mb-5 bg-body rounded mt-5">
                 <form onSubmit={formik.handleSubmit}>
                 <div className="mb-3 mt-3">
@@ -97,6 +99,8 @@ function PasswordChangePage() {
 
                 </form>
             </div>
+            </div>
+        </div>
         </div>
     </div>
   )

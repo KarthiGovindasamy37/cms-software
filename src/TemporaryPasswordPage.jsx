@@ -50,7 +50,9 @@ function TemporaryPasswordPage() {
                 <Link to="/"  className="navbar-brand fw-bold sitename" >MySite.com</Link>
                 </div>
           </nav>
+          <div className="temppage">
           <div className="d-flex justify-content-center  temppage bg-light ">
+            <div className="col-11 col-sm-10 col-md-6 col-lg-4">
               <div className="temppass shadow-lg p-3 mb-5 bg-body rounded mt-5">
                   <form onSubmit={formik.handleSubmit}>
                       <div className="mb-3 mt-3">
@@ -76,6 +78,8 @@ function TemporaryPasswordPage() {
 
                   </form>
               </div>
+              </div>
+          </div>
           </div>
     </div>
   )

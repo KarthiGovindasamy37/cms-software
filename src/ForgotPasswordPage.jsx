@@ -55,7 +55,9 @@ function ForgotPasswordPage() {
         </div>
  
         </div>
+        <div className="forgotpage">
         <div className="d-flex justify-content-center  forgotpage bg-light ">
+          <div className="col-11 col-sm-10 col-md-6 col-lg-4">
             <div className="forgot shadow-lg p-3 mb-5 bg-body rounded mt-5">
               
                 <form onSubmit={formik.handleSubmit}>
@@ -76,6 +78,8 @@ function ForgotPasswordPage() {
                       
                       </form>
                      </div>
+                     </div>
+                </div>
                 </div>
                 
     </div>

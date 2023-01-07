@@ -58,7 +58,6 @@ text-decoration: none;
   height: 600px;
 }
 .signup{
-  width: 500px;
   height: max-content;
   border: 1px solid violet;
   padding: 20px;
@@ -83,7 +82,6 @@ font-weight: bold;
 height: 440px;
 }
 .forgot{
-  width: 500px;
   height: max-content;
   border: 1px solid pink;
   padding: 20px;
@@ -95,8 +93,10 @@ text-decoration: none;
 .temppage{
 height: 600px;
 }
+.page-div-1{
+  height: 600px;
+}
 .temppass{
-  width: 500px;
   height: max-content;
   border: 1px solid green;
   padding: 20px;

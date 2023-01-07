@@ -65,8 +65,9 @@ function SignupPage() {
       <Link to="/"  className="navbar-brand fw-bold sitename" >MySite.com</Link>
       </div>
 </nav>
-<div className="d-flex justify-content-center  signuppage bg-light ">
-  <div>
+<div className="signuppage">
+<div className="d-flex justify-content-center  page-div-1 bg-light ">
+  <div className='col-11 col-sm-10 col-md-6 col-lg-4'>
     <h5 className='text-center'>Already have an account? <Link to="/" className='tnc'>Log in</Link></h5>
     <div className="signup shadow-lg p-3 mb-5 bg-body rounded mt-3">
         <form onSubmit={formik.handleSubmit}>
@@ -117,6 +118,7 @@ function SignupPage() {
 
         </form>
     </div>
+</div>
 </div>
 </div>
 </div>
