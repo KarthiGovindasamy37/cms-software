@@ -45,8 +45,6 @@ function PasswordChangePage() {
                 if(password.status===200){
                     toast.success(password.data.message,{toastId:"11"})
                     navigate("/")
-                }else{
-                    toast.error(password.data.message,{toastId:"12"})
                 }
             } catch (error) {
                 toast.error(error.response.data.message,{toastId:"5"})

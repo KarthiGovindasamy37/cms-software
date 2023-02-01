@@ -25,8 +25,6 @@ function ForgotPasswordPage() {
         let user=await axios.post(`${env.api}/forgot`,values)
         if(user.status===200){
           toast.success(user.data.message,{toastId:"8"})
-        }else{
-          toast.error(user.data.message,{toastId:"9"})
         }
       } catch (error) {
         toast.error(error.response.data.message,{toastId:"3"})

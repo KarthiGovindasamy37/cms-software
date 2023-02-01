@@ -8,7 +8,6 @@ export const loginUser=(values)=>{
    return async (dispatch)=>{
         try {
             
-            
             let login= await axios.post(`${env.api}/login`,values)
            
             if(login.status===200){
@@ -20,8 +19,6 @@ export const loginUser=(values)=>{
                 type:"LOGIN",
                 payload:loginDetails
                 })
-            }else{
-              toast.error(login.data.message,{toastId:"7"})
             }
         } catch (error) {
           

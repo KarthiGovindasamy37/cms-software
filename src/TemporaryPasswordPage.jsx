@@ -34,10 +34,7 @@ function TemporaryPasswordPage() {
                     toast.info(user.data.message,{toastId:"10"})
                     navigate("/passwordchange")
 
-                }else{
-                    toast.error(user.data.message,{toastId:"9"})
                 }
-
             } catch (error) {
                 toast.error(error.response.data.message,{toastId:"4"})
             }
