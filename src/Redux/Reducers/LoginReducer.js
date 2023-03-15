@@ -19,7 +19,16 @@ const LoginReducer = (state=initialState,{type,payload})=>{
                             logoutLink:!state.logoutLink
                         }
            case "LOGOUT":
-            return{...state,user:payload,logoutLink:false}
+            return{
+                ...state,
+                user:payload,
+                logoutLink:false
+            }
+            case "SETLOGGEDIN":
+                return{
+                    ...state,
+                    user:payload
+                }
            
          default :
         return state

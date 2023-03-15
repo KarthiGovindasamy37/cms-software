@@ -4,10 +4,13 @@ import { toast } from 'react-toastify'
 import { env } from './Config'
 import axios from 'axios'
 import { useSelector } from 'react-redux'
+import { useNavigate } from 'react-router-dom'
 
 function PlanCardPage() {
 
   const{name,email}=useSelector(state=>state.user.user)
+
+  let navigate = useNavigate()
  
 
     let data=[
@@ -254,7 +257,7 @@ function PlanCardPage() {
 
         let paymentDetails={price}
 
-        let payment=await axios.post(`${env.api}/razorpaypayment`,paymentDetails);
+        let payment=await axios.post(`${env.api}/razorpaypayment`,paymentDetails,{headers : {authorization : window.localStorage.getItem("token")}});
         
         let options={
           key:env.razorpay_key,
@@ -291,6 +294,7 @@ function PlanCardPage() {
 
       } catch (error) {
         toast.error(error.response.data.message,{toastId:"13"})
+        if(error.response.status === 401 || error.response.status === 440) navigate("/")
       }
 
     }

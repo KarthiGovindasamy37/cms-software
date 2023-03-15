@@ -2,6 +2,7 @@ const initialState = {
 webOpen:false,
 webContents:false,
 blogOpen:false,
+authError:false
 
 }
 
@@ -23,6 +24,16 @@ const PortalReducer=(state=initialState,action)=>{
                         ...state,
                         blogOpen:!state.blogOpen
                     }
+                    case "AUTHERROR":
+                        return{
+                            ...state,
+                            authError:true
+                        }
+                        case "SETAUTHERROR":
+                            return{
+                                ...state,
+                                authError:false
+                            }
                     
         
             default:

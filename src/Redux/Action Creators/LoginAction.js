@@ -44,3 +44,5 @@ export const logoutUser=()=>{
   }
 }
 
+export const setLoggedin = (value) =>(dispatch) =>dispatch({type:"SETLOGGEDIN",payload:value})
+

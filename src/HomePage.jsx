@@ -7,19 +7,35 @@ import { useDispatch, useSelector } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import * as actionCreator from "./Redux/Action Creators/LoginAction"
 import { useEffect } from 'react'
+import { setAuthError } from './Redux/Action Creators/PortalAction'
 
 function HomePage() {
 
     const user = useSelector(state => state.user.user)
+    const {authError} = useSelector(state => state.portal)
     const dispatch = useDispatch()
 
-    const {loginUser} = bindActionCreators(actionCreator,dispatch)
+    const {loginUser,setLoggedin} = bindActionCreators(actionCreator,dispatch)
 
     let navigate=useNavigate()
 
     useEffect(()=>{
-       if(user.isLoggedin === true ) navigate("/portal")
+       if(user.isLoggedin === true && authError === false ) navigate("/portal")
     },[user])
+
+    const emptyUser = {
+      name:"",
+      email:"",
+      isLoggedin:false
+    }
+    
+    useEffect(() => {
+    if(authError === true) {
+      dispatch(setAuthError())
+      setLoggedin(emptyUser)
+    }
+    
+    },[authError])
 
     let formik=useFormik({
         initialValues:{
