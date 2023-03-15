@@ -34,7 +34,7 @@ export const logoutAct=()=>(dispatch)=>dispatch({type:"LOGOUTLINK"})
 
 export const logoutUser=()=>{
   return(dispatch)=>{
-    window.localStorage.removeItem("loginDetails")
+    window.localStorage.clear()
     let logoutDetails={
       name:"",
       email:"",
